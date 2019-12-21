@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Despair</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Аутентификация
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="authorization.html">Авторизация</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="register.html">Регистрация</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Мой профиль</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container bootstrap snippet">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>User name</h1>
+            </div>
+            <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image"
+                        class="img-circle img-responsive"
+                        src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+                <div class="text-center">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
+                        alt="avatar">
+                    <h6>Upload a different photo...</h6>
+                    <input type="file" class="text-center center-block file-upload">
+                </div>
+                </hr><br>
+
+
+            </div>
+            <!--/col-3-->
+            <div class="col-sm-9">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <hr>
+                        <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="first_name">
+                                        <h4>First name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="first_name" id="first_name"
+                                        placeholder="first name" title="enter your first name if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="last_name">
+                                        <h4>Last name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="last_name" id="last_name"
+                                        placeholder="last name" title="enter your last name if any.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="phone">
+                                        <h4>Phone</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                        placeholder="enter phone" title="enter your phone number if any.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="mobile">
+                                        <h4>Mobile</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile"
+                                        placeholder="enter mobile number" title="enter your mobile number if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="email">
+                                        <h4>Email</h4>
+                                    </label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="you@email.com" title="enter your email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="email">
+                                        <h4>Location</h4>
+                                    </label>
+                                    <input type="email" class="form-control" id="location" placeholder="somewhere"
+                                        title="enter a location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="password">
+                                        <h4>Password</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                        placeholder="password" title="enter your password.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="password2">
+                                        <h4>Verify</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password2" id="password2"
+                                        placeholder="password2" title="enter your password2.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <button class="btn btn-lg btn-success" type="submit"><i
+                                            class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                    <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                        Reset</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <hr>
+
+                    </div>
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="messages">
+
+                        <h2></h2>
+
+                        <hr>
+                        <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="first_name">
+                                        <h4>First name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="first_name" id="first_name"
+                                        placeholder="first name" title="enter your first name if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="last_name">
+                                        <h4>Last name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="last_name" id="last_name"
+                                        placeholder="last name" title="enter your last name if any.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="phone">
+                                        <h4>Phone</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                        placeholder="enter phone" title="enter your phone number if any.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="mobile">
+                                        <h4>Mobile</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile"
+                                        placeholder="enter mobile number" title="enter your mobile number if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="email">
+                                        <h4>Email</h4>
+                                    </label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="you@email.com" title="enter your email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="email">
+                                        <h4>Location</h4>
+                                    </label>
+                                    <input type="email" class="form-control" id="location" placeholder="somewhere"
+                                        title="enter a location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="password">
+                                        <h4>Password</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                        placeholder="password" title="enter your password.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="password2">
+                                        <h4>Verify</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password2" id="password2"
+                                        placeholder="password2" title="enter your password2.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <button class="btn btn-lg btn-success" type="submit"><i
+                                            class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                    <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i>
+                                        Reset</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!--/tab-pane-->
+                    <div class="tab-pane" id="settings">
+
+
+                        <hr>
+                        <form class="form" action="##" method="post" id="registrationForm">
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="first_name">
+                                        <h4>First name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="first_name" id="first_name"
+                                        placeholder="first name" title="enter your first name if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="last_name">
+                                        <h4>Last name</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="last_name" id="last_name"
+                                        placeholder="last name" title="enter your last name if any.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="phone">
+                                        <h4>Phone</h4>
+                                    </label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                        placeholder="enter phone" title="enter your phone number if any.">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="mobile">
+                                        <h4>Mobile</h4> 
+                                    </label>
+                                    <input type="text" class="form-control" name="mobile" id="mobile"
+                                        placeholder="enter mobile number" title="enter your mobile number if any.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="email">
+                                        <h4>Email</h4>
+                                    </label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="you@email.com" title="enter your email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="email">
+                                        <h4>Location</h4>
+                                    </label>
+                                    <input type="email" class="form-control" id="location" placeholder="somewhere"
+                                        title="enter a location">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="password">
+                                        <h4>Password</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                        placeholder="password" title="enter your password.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="password2">
+                                        <h4>Verify</h4>
+                                    </label>
+                                    <input type="password" class="form-control" name="password2" id="password2"
+                                        placeholder="password2" title="enter your password2.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <button class="btn btn-lg btn-success pull-right" type="submit"><i
+                                            class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                    <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!--/tab-pane-->
+            </div>
+            <!--/tab-content-->
+
+        </div>
+        <!--/col-9-->
+    </div>
+    <!--/row-->
+</body>
+
+</html>
