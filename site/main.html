@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="despair_icon.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8">
@@ -21,39 +22,47 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Despair</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="main.html">Главная <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Аутентификация
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkorchid;">
+        <a class="navbar-brand" href="main.html">
+            <img src="despair_icon.png" width="30" height="30" class="d-inline-block align-top" alt="Despair Icon">
+            Despair
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="main.html">Главная</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="authorization.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Аутентификация <span class="sr-only">(current)</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="authorization.html">Авторизация</a>
-                        <div class="dropdown-divider"></div>
+                        <hr/>
                         <a class="dropdown-item" href="register.html">Регистрация</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Мой профиль</a>
-                </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="aboutus.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Информация
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="aboutus.html">О нас</a>
+                        <a class="dropdown-item" href="ourcontacts.html">Наши контакты</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <form class="form-inline my-4 my-lg-0">
+            <a class="navbar-brand" href="profile.html">
+                <img src="despair2.png" width="30" height="30" class="d-inline-block align-top" alt="Despair Cabinet Icon">
+                Мой кабинет
+            </a>
+        </form>
     </nav>
+    <!--Navbar end-->
+
 </body>
 
 </html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="despair_icon.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мои курсы</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <!-- Navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: darkorchid;">
+            <a class="navbar-brand" href="main.html">
+                <img src="despair_icon.png" width="30" height="30" class="d-inline-block align-top" alt="Despair Icon">
+                Despair
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="main.html">Главная</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="authorization.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Аутентификация <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="authorization.html">Авторизация</a>
+                            <hr/>
+                            <a class="dropdown-item" href="register.html">Регистрация</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="aboutus.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Информация
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="aboutus.html">О нас</a>
+                            <a class="dropdown-item" href="ourcontacts.html">Наши контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="form-inline my-4 my-lg-0">
+                <a class="navbar-brand" href="profile.html">
+                    <img src="despair2.png" width="30" height="30" class="d-inline-block align-top" alt="Despair Cabinet Icon">
+                    Мой кабинет
+                </a>
+            </form>
+        </nav>
+        <!--Navbar end-->
+    <section id="portfolio" class="portfolio1">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="section-title">Awesome Work</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <div class="portfolio-filter">
+                        <ul class="list-inline text-uppercase">
+                            <li data-filter="*" class="active">All</li>
+                            <li data-filter=".web-design">Web Design</li>
+                            <li data-filter=".graphic">Graphic</li>
+                            <li data-filter=".photography">Photography</li>
+                            <li data-filter=".motion-video">Motion Video</li>
+                        </ul>
+                    </div> <!-- /.portfolioFilter -->
+
+                    <div class="portfolio-items1">
+
+                        <div class="single-item web-design motion-video">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio1.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item motion-video">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio2.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item web-design graphic">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio3.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item web-design graphic">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio4.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item web-design motion-video">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio5.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item web-design graphic">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio1.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item web-design">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio2.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item graphic photography">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio3.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item graphic motion-video photography">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio4.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item graphic">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio5.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item  web-design">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio1.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-item web-design photography">
+                            <div class="project-content">
+                                <img class="img-responsive" src="images/portfolio2.jpg">
+                                <div class="project-overflow center-vertically text-center">
+                                    <strong>Project Title</strong>
+                                    <p>Branding, Graphic Design</p>
+                                    <ul class="list-inline">
+                                        <li><i class="fa fa-heart"></i></li>
+                                        <li><i class="fa fa-link"></i></li>
+                                        <li><i class="fa fa-camera"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
